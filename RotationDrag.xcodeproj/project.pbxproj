@@ -12,6 +12,9 @@
 		CE5423EB1E755742009AA87E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5423E91E755742009AA87E /* Main.storyboard */; };
 		CE5423ED1E755742009AA87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5423EC1E755742009AA87E /* Assets.xcassets */; };
 		CE5423F01E755742009AA87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5423EE1E755742009AA87E /* LaunchScreen.storyboard */; };
+		CE5423F81E75878F009AA87E /* CGFloat+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5423F71E75878F009AA87E /* CGFloat+Angle.swift */; };
+		CE5423FA1E7587E8009AA87E /* CGPoint+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5423F91E7587E8009AA87E /* CGPoint+Angle.swift */; };
+		CE5423FC1E7588AA009AA87E /* UIView+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5423FB1E7588AA009AA87E /* UIView+Angle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CE5423EC1E755742009AA87E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5423EF1E755742009AA87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5423F11E755742009AA87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5423F71E75878F009AA87E /* CGFloat+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Angle.swift"; sourceTree = "<group>"; };
+		CE5423F91E7587E8009AA87E /* CGPoint+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Angle.swift"; sourceTree = "<group>"; };
+		CE5423FB1E7588AA009AA87E /* UIView+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Angle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				CE5423E51E755742009AA87E /* AppDelegate.swift */,
 				CE5423E71E755742009AA87E /* ViewController.swift */,
+				CE5423F71E75878F009AA87E /* CGFloat+Angle.swift */,
+				CE5423F91E7587E8009AA87E /* CGPoint+Angle.swift */,
+				CE5423FB1E7588AA009AA87E /* UIView+Angle.swift */,
 				CE5423E91E755742009AA87E /* Main.storyboard */,
 				CE5423EC1E755742009AA87E /* Assets.xcassets */,
 				CE5423EE1E755742009AA87E /* LaunchScreen.storyboard */,
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5423FA1E7587E8009AA87E /* CGPoint+Angle.swift in Sources */,
+				CE5423FC1E7588AA009AA87E /* UIView+Angle.swift in Sources */,
 				CE5423E81E755742009AA87E /* ViewController.swift in Sources */,
 				CE5423E61E755742009AA87E /* AppDelegate.swift in Sources */,
+				CE5423F81E75878F009AA87E /* CGFloat+Angle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var targetView: UIView!
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+        }
+        let location = touch.location(in: self.view)
+        let prevLocation = touch.previousLocation(in: self.view)
+        
+        let centerPoint = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
+        
+        let diffAngle = centerPoint.angle(point: location) - centerPoint.angle(point: prevLocation)
+        let nextAngle = targetView.angle() + diffAngle
+        
+        targetView.transform = CGAffineTransform(rotationAngle: nextAngle.toRadian())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
-
